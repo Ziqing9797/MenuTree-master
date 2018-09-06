@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title><Founder></Founder></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--<link rel="stylesheet" href="dist/bootstrap/css/bootstrap.min.css">-->
+    <link href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../css/sidebar-menu.css"><!--16.13-->
+
+    <!-- Le styles -->
+    <link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="../css/base.css" type="text/css">
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!-- Navbar
+================================================== -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="./index.html">Founder</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class="">
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li class="active">
+                        <a href="./getting-started.html">文档</a>
+                    </li>
+                    <li class="">
+                        <a href="./scaffolding.html">脚手架</a>
+                    </li>
+
+                    <li class="">
+                        <a href="./customize.html">定制</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+    <div class="container">
+        <h1>Kubernetes</h1>
+        <p class="lead">使用阿里云 Kubernetes 容器服务快速启动</p>
+    </div>
+</header>
+
+
+<div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+        <div class="span3 bs-docs-sidebar">
+            <aside class="main-sidebar" id="bignav"><!--右侧导航栏-->
+                <section id="div_menu" class="sidebar">
+                </section>
+            </aside>
+
+        </div>
+        <div class="span9">
+
+
+
+            <!-- Download
+            ================================================== -->
+            <section id="download-bootstrap">
+                <div class="page-header">
+                    <h1>1. 用户管理...</h1>
+                </div>
+                <p class="lead">下载之前先检查一下是否准备好了一个代码编辑器(我们推荐使用 <a href="http://sublimetext.com/2">Sublime Text 2</a>) ，你是否已经掌握了足够的HTML和CSS知识以开展工作。这里我们不详述源码文件，但是它们可以随时被下载。在这里我们只着重介绍使用已经编译好的Bootstrap文件进行入门讲解。</p>
+
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h2>下载编译好的文件</h2>
+                        <p><strong>快速开始:</strong>立即下载编译好的版本吧，里面已经包含了CSS、JS和图片文件了，而且所有文件已经经过了压缩处理。不过，文档和源码文件不包含哦。</p>
+                        <p><a class="btn btn-large btn-primary" href="http://getbootstrap.com/2.3.2/assets/bootstrap.zip" >下载Bootstrap</a></p>
+                    </div>
+                    <div class="span6">
+                        <h2>下载源码</h2>
+                        <p>从GitHub直接下载到的最新版的源码包括CSS、JavaScript的源文件，以及一份文档。</p>
+                        <p><a class="btn btn-large" href="https://github.com/twbs/bootstrap/archive/v2.3.2.zip" >下载Bootstrap源码</a></p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- File structure
+            ================================================== -->
+            <section id="file-structure">
+                <div class="page-header">
+                    <h1>2. 文件结构</h1>
+                </div>
+                <p class="lead">在下载的压缩包中你可以看到如下的文件结构和内容。所有文件按逻辑进行分类存储，并且提供了编译和压缩两个版本的文件。</p>
+                <p>将下载的文件解压缩之后就可以看到如下的文件结构：</p>
+                <pre class="prettyprint">
+  bootstrap/
+  ├── css/
+  │   ├── bootstrap.css
+  │   ├── bootstrap.min.css
+  ├── js/
+  │   ├── bootstrap.js
+  │   ├── bootstrap.min.js
+  └── img/
+      ├── glyphicons-halflings.png
+      └── glyphicons-halflings-white.png
+</pre>
+                <p>这就是Bootstrap的基本结构：编译后的文件可以快速应用于任何web项目。我们提供了编译版的CSS和JS文件 (<code>bootstrap.*</code>)，也同时提供了编译并压缩之后的CSS和JS文件 (<code>bootstrap.min.*</code>)。图片文件是使用 <a href="http://imageoptim.com/">ImageOptim</a> 工具进行压缩的，这个工具是Mac平台上用于压缩PNG文件的一个app。</p>
+                <p>请注意，所有的JavaScript插件都依赖jQuery库。</p>
+            </section>
+
+
+
+            <!-- Contents
+            ================================================== -->
+            <section id="contents">
+                <div class="page-header">
+                    <h1>3. 包含了哪些东西</h1>
+                </div>
+                <p class="lead">Bootstrap中的HTML、CSS和JS适用于各类设备, 不过它们可以被概括成几个类别，请看本<a href="http://www.bootcss.com">文档</a>顶部的导航条。</p>
+
+                <h2>文档章节</h2>
+                <h4><a href="./scaffolding.html">脚手架</a></h4>
+                <p>全局性的样式文件，用于重置背景、链接样式、栅格系统等，并包含两个简单的布局结构。</p>
+                <h4><a href="./base-css.html">基本CSS样式</a></h4>
+                <p>常见的HTML元素 -- 如排版、代码、表格、表单、和按钮的样式。还包括 <a href="http://glyphicons.com">Glyphicons</a>, 一个非常棒的图标集。</p>
+                <h4><a href="./components.html">组件</a></h4>
+                <p>常见界面组件 -- 如标签、pill、导航、警告、页面标题的基本样式。</p>
+                <h4><a href="./javascript.html">JavaScript插件</a></h4>
+                <p>和组件类似，这些Javascript插件用来实现提示(tooltip)、弹出框(popover)、模态对话框(modal)等具有交互性的组件。</p>
+
+                <h2>组件列表</h2>
+                <p><strong>组件库</strong> 和 <strong>JavaScript插件集</strong> 一同提供了以下组件元素。</p>
+                <ul>
+                    <li>按钮组</li>
+                    <li>按钮下拉菜单</li>
+                    <li>用于导航的标签、pill、列表</li>
+                    <li>导航条</li>
+                    <li>Labels</li>
+                    <li>Badges</li>
+                    <li>Page headers and hero unit</li>
+                    <li>缩略图</li>
+                    <li>警告对话框</li>
+                    <li>进度条</li>
+                    <li>模态对话框(Modals)</li>
+                    <li>下拉菜单(Dropdowns)</li>
+                    <li>Tooltips</li>
+                    <li>Popovers</li>
+                    <li>Accordion</li>
+                    <li>Carousel</li>
+                    <li>Typeahead</li>
+                </ul>
+                <p>在后面的文档中, 我们会挨个详细的介绍这些组件的细节。在此之前, 先来看看如何使用并定制它们。</p>
+            </section>
+
+
+
+            <!-- HTML template
+            ================================================== -->
+            <section id="html-template">
+                <div class="page-header">
+                    <h1>4. 基本的HTML模版</h1>
+                </div>
+                <p class="lead">为了把注意力完全放到使用Bootstrap上，我们先做一点儿课前准备。为了做到这一点，我们将利用一个基本的HTML模板, 其中包括我们在<a href="./getting-started.html#file-structure">文件结构</a>一章中提到的所有内容。</p>
+                <p>现在, 这里展示一个<strong>典型的HTML文件</strong>：</p>
+                <pre class="prettyprint linenums">
+
+</pre>
+                <p>为了使其成为<strong>一个Bootstrap模板</strong>, 需要包含相应的 CSS and JS 文件：</p>
+                <pre class="prettyprint linenums">
+</pre>
+                <p><strong>设置成功!</strong> 加入这两个文件, 你就可以开始用Bootstrap开发任何网站和应用程序了。</p>
+            </section>
+
+
+
+
+
+            <!-- Next
+            ================================================== -->
+            <section id="what-next">
+                <div class="page-header">
+                    <h1>下一步？</h1>
+                </div>
+                <p class="lead">根据文档顶部的分类查看更多案例、代码片段, 或定制Bootstrap，为你即将开展的项目做一次彻底改变。</p>
+                <a class="btn btn-large btn-primary" href="./scaffolding.html" >查看 Bootstrap 文档</a>
+                <a class="btn btn-large" href="./customize.html" style="margin-left: 5px;" >定制 Bootstrap</a>
+            </section>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <p>Designed and built with all the love in the world by <a href="http://twitter.com/mdo" target="_blank">@mdo</a> and <a href="http://twitter.com/fat" target="_blank">@fat</a>.</p>
+        <p>Code licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>, documentation under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <p><a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+        <ul class="footer-links">
+            <li><a href="http://blog.getbootstrap.com">Blog</a></li>
+            <li class="muted">&middot;</li>
+            <li><a href="https://github.com/twbs/bootstrap/issues?state=open">Issues</a></li>
+            <li class="muted">&middot;</li>
+            <li><a href="https://github.com/twbs/bootstrap/releases">Changelog</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!--回到顶部-->
+<a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: none;"><i class="fa fa-angle-up"></i></a>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+
+<script src="../js/sidebar-menu.js"></script>
+<script src="../js/base.js"></script>
+<script src="../config/options.js"></script>
+<script>
+    $(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#scrollUp").fadeIn(1500);
+                }
+                else
+                {
+                    $("#scrollUp").fadeOut(1500);
+                }
+            });
+
+            //当点击跳转链接后，回到页面顶部位置
+            $("#scrollUp").click(function(){
+                //$('body,html').animate({scrollTop:0},1000);
+                if ($('html').scrollTop()) {
+                    $('html').animate({ scrollTop: 0 }, 1000);
+                    return false;
+                }
+                $('body').animate({ scrollTop: 0 }, 1000);
+                return false;
+            });
+
+            $(window).scroll(function(){
+                var bignav =$("#bignav");      //获取到导航栏
+                if($(this).scrollTop() >150){  //当滚动距离大于150px时执行下面的东西
+                    bignav.css({
+                        position:"fixed",
+                        top:42,
+                        zIndex:9999
+                    });
+                }
+                else{//当滚动距离小于150的时候执行下面的内容，也就是让导航栏恢复原状
+                    bignav.css({
+                        position:"absolute",
+                        top:190,
+                        zIndex:9999
+                    });
+                }
+            });
+        });
+    });
+</script><!--返回顶部-->
+<script>
+
+    $(document).ready(function () {
+        $(window).load(function(){
+            console.log(options)
+            var menulist=options.extend.children
+            for (var menu in menulist) {
+                // if(menulist[menu].children.length > 0){
+                console.log(menulist[menu])
+                    if(menulist[menu].id=='2'){
+                        console.log(menulist[menu].parentId)
+                    }
+                // }
+            }
+            $("#2").addClass("active");
+            $("#4").children().css({"color":"rgb(61, 99, 124)","text-decoration":"underline"})
+        });
+        
+        // $(window).load(subMenu());
+        // //高亮显示该菜单项
+        // var menulist = options;//引入配置列表
+        // function subMenu(menulist) {
+        //     console.log(menulist)
+        //     for (var menu in menulist) {
+        //
+        //     }
+        // }
+
+    });
+</script>
+</body>
+</html>

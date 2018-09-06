@@ -1,0 +1,56 @@
+body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+.main-sidebar{
+    position: absolute;
+    top: 190px;
+    height: 100%;
+    min-height: 100%;
+    width: 230px;
+    z-index: 810;
+    background-color: gainsboro;
+}
+.subhead {
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.jumbotron {
+    position: relative;
+    padding: 40px 0;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    //background: linear-gradient(45deg, #020031 0%,#020031    100%);
+    background: gray;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#020031', endColorstr='#6d3353',GradientType=1 );
+    -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+    box-shadow: inset 0 3px 7px rgba(0,0,0,.2), inset 0 -3px 7px rgba(0,0,0,.2);
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #e5e5e5;
+    background: gainsboro;
+}
+
+
+#scrollUp {
+    background-color: #777;
+    color: #eee;
+    font-size: 40px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    width: 46px;
+    height: 46px;
+    border: none;
+    opacity: .8;
+}
+
+scrollUp:hover{background-color:#333}
+@media screen and (min-width:992px){#scrollUp{bottom:100px
+
+}}
